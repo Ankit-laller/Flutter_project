@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/Widget/Mytheme.dart';
 import 'package:flutter_project/pages/homepage.dart';
 import 'package:flutter_project/pages/login.dart';
 import 'package:flutter_project/utils/routes.dart';
@@ -16,11 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.purple,
-        brightness: Brightness.light,
-        fontFamily: GoogleFonts.lato().fontFamily,
-      ),
+      theme: MyTheme.lightTheme(context),
       // home: homepage(),
       initialRoute: MyRoutes.homeroute,
       routes: {
